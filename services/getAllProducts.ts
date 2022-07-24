@@ -1,11 +1,11 @@
 import { AxiosResponse } from 'axios';
-import { Product } from '../components/types/Product.type';
+import { IProduct } from '../components/types/Product.type';
 import { jsonInstance } from '../utils/instance';
 
 interface GetAllProductsResponse{
     record:{
         data:{
-            nodes: Product[]
+            nodes: IProduct[]
         }
     }
     metadata: {
